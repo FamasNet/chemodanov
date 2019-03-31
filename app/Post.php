@@ -25,7 +25,7 @@ class Post extends Model
     public function addComment($body){
 
         $this->comments()->create(['body' => $body,
-                                   'user_id' => '1'
+                                   'user_id' => auth()->id(),
                                 ]);
     
     }

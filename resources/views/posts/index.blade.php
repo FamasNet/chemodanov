@@ -10,6 +10,9 @@
                         {{ $post->body }}
                     </p>
                     
+                        <!-- <button type ="button" class="btn btn-light like"><img width = '30px' height = '30px' src="https://im0-tub-ru.yandex.net/i?id=e06b31de80b83345c631816b7bec28e0&n=13&exp=1"></button>
+                        <button class="btn btn-light dislike">Dislike:</button> -->
+                 
 
                     <a href="/posts/{{ $post->id  }} " class="btn btn-primary">Read More →</a>
                 </div>
@@ -26,7 +29,10 @@
       </div>
 
     @endforeach
-<script>
 
-</script>
+    <div class="pagination">
+        {{
+            $posts->links()
+        }}
+    <div>    
 @endsection

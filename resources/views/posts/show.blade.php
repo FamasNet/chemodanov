@@ -32,7 +32,9 @@
                 @foreach ($post->comments as $commnent)
 
                     <li class="list-group-item">      
-
+                        <strong>
+                            {{$commnent->user->name}}:
+                        </strong>
                         {{$commnent->body}}
 
                     </li>

@@ -18,7 +18,7 @@ class PostController extends Controller
     
     public function index(){
 
-        $posts = Post::all();
+        $posts = Post::paginate(3);
 
         return view('posts.index')->with('posts', $posts);
 
@@ -46,7 +46,7 @@ class PostController extends Controller
         Post::create([
             'title' => $request->title,
             'body' => $request->body,
-            'user_id' => '1',
+            'user_id' => auth()->id(),
         ]);
 
         return redirect()->home();
