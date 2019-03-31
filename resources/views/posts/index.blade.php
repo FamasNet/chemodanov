@@ -9,7 +9,7 @@
                     <p class="card-text">
                         {{ $post->body }}
                     </p>
-                    <likes> </likes>
+                    
 
                     <a href="/posts/{{ $post->id  }} " class="btn btn-primary">Read More →</a>
                 </div>
@@ -26,5 +26,7 @@
       </div>
 
     @endforeach
+<script>
 
+</script>
 @endsection
