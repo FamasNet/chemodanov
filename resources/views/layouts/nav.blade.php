@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
     <div class="container">
-        <a href="http://laratest.chemodanov" class="navbar-brand">Home</a>
+        <a href="http://project.chemodanov/" class="navbar-brand">Home</a>
         
         @auth
             <a href="/posts/create " class=" ml-3 btn btn-primary">Create post</a>
@@ -16,17 +16,17 @@
                 </li>
 
                 <li class="nav-item nav-link">
-                    <a href="http://laratest.chemodanov/logout">Logout</a>
+                    <a href="http://project.chemodanov/logout">Logout</a>
                 </li>
             @endauth
 
             @guest
                 <li class="nav-item">
-                    <a href="http://laratest.chemodanov/login" class="nav-link">Login</a>
+                    <a href="http://project.chemodanov/login" class="nav-link">Login</a>
                 </li>
 
                 <li class="nav-item">
-                <a href="http://laratest.chemodanov/registration" class="nav-link">Register</a>
+                <a href="http://project.chemodanov/registration" class="nav-link">Register</a>
             </li>
             @endguest
         </ul>

@@ -9,11 +9,12 @@
                     <p class="card-text">
                         {{ $post->body }}
                     </p>
-                    
+                
+                
                         <!-- <button type ="button" class="btn btn-light like"><img width = '30px' height = '30px' src="https://im0-tub-ru.yandex.net/i?id=e06b31de80b83345c631816b7bec28e0&n=13&exp=1"></button>
                         <button class="btn btn-light dislike">Dislike:</button> -->
                  
-
+                        <example-component :postid="{{ json_encode($post->id) }}" :dislike="{{ json_encode($post->count_dislike) }}" :like="{{ json_encode($post->count_like) }}"> </example-component>
                     <a href="/posts/{{ $post->id  }} " class="btn btn-primary">Read More →</a>
                 </div>
                 

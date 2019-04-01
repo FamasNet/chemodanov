@@ -16,6 +16,14 @@ Route::get('registration', 'RegistrationController@create');
 Route::get('posts/create', 'PostController@create');
 Route::get('/', 'PostController@index')->name('home');
 
+Route::get('posts/minuslike', 'PostController@minusLike');
+Route::get('posts/pluslike', 'PostController@plusLike');
+
+
+Route::get('posts/minusdislike', 'PostController@minusDislike');
+Route::get('posts/plusdislike', 'PostController@plusDisLike');
+
+
 Route::get('posts', 'PostController@store');
 Route::get('posts/{post}', 'PostController@show');
 Route::post('posts/{post}/comments', 'CommentController@store');

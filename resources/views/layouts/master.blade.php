@@ -11,8 +11,6 @@
 
     <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet">
 
-    <script src="{{ URL::asset('js/app.js') }}"></script> 
-
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
 
     <!-- Bootstrap core CSS -->
@@ -29,23 +27,34 @@
   </head>
 
 <body>
-<div id="app">
-  @include('layouts.nav')
 
-<example-component></example-component>
-<div class="container">
-  <div class="row">
-    <div class="col-md-8">
-      @yield('content')
-    </div>
-    </div>
+  <div id="app" > 
+
+
+      @include('layouts.nav')
+
+        <div class="container">
+          
+          <div class="row">
+  
+            <div class="col-md-8">
+            
+              @yield('content')
+            
+            </div>
+          
+          </div>
+        
+        </div>
+      
+      </div>
+
   </div>
-</div>
-</div>
 
 
-<!-- Bootstrap core JavaScript -->
+<script src="{{ asset('js/app.js') }}"></script>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  
+</body>
 </html>
