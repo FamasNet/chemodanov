@@ -2,7 +2,7 @@
 
 @section('content')
     
-        <div class="col-sm-12 blog-main">
+        <div id='create' class="col-sm-12 blog-main">
             <h1>Create new post:</h1>
 
             <hr/>

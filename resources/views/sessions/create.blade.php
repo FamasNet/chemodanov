@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="col-sm-12 blog-main">
+<div id='login' class="col-sm-12 blog-main">
             <h1>Sign in:</h1>
 
             <hr/>

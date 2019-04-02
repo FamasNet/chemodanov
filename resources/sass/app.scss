@@ -13,8 +13,16 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-body{
+body {
+  
+  height: 100vh;}
+#app{
+    
+    background-color: #EEEFF0;
 
-  background-color: #f8fafc73;
+}
 
+#create, #login, #registration{
+
+  height: 100vh;
 }

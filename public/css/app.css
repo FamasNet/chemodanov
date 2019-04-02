@@ -10661,6 +10661,16 @@ a.text-dark:focus {
 }
 
 body {
-  background-color: #f8fafc73;
+  height: 100vh;
+}
+
+#app {
+  background-color: #EEEFF0;
+}
+
+#create,
+#login,
+#registration {
+  height: 100vh;
 }
 

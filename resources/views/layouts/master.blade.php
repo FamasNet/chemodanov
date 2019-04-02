@@ -19,11 +19,7 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-        
-    <link
-        href="form-validation.css"
-        rel="stylesheet"
-    >
+   
   </head>
 
 <body>
@@ -53,8 +49,9 @@
 
 
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('js/bootstrap.js') }}"></script>
+
+
   
 </body>
 </html>

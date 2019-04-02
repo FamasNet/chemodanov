@@ -11,10 +11,15 @@
 |
 */
 
+Route::get('posts/getlike', 'PostController@getLike');
+Route::get('posts/getdislike', 'PostController@getDislike');
+Route::get('posts/userlike', 'PostController@userLike');
 
 Route::get('registration', 'RegistrationController@create');
 Route::get('posts/create', 'PostController@create');
 Route::get('/', 'PostController@index')->name('home');
+
+
 
 Route::get('posts/minuslike', 'PostController@minusLike');
 Route::get('posts/pluslike', 'PostController@plusLike');
